@@ -44,8 +44,9 @@ button{
 
 
 #top-metro{
+    top:60vh;
     position:relative;
-    background-color:darkgray;
+    /* background-color:darkgray; */
     height:35vh;
 }
 
@@ -53,6 +54,7 @@ button{
     position:relative;
     display:flex;
     text-align: center;
+    
 
     
 }
@@ -63,7 +65,6 @@ button{
     grid-column: 1/auto;
     grid-column:-1;
     grid-template-columns: auto auto auto auto;
-
 
 }
 
@@ -80,21 +81,39 @@ button{
     
 }
 
+#items-veiwer{
+    display:flex;
+    position:relative;
+    top:60vh;   
+    font-size:20px;
+    gap: 30px;
+    justify-content:center;
+    align-items: center;
+    justify-items:center;
+    margin:55px;
+}
+
 /* End of section */
 
 /* down section */
 #boxes-container{
+   position:relative;
+    gap:20px;
+    top:70vh;
+    height:390px;
     box-sizing: border-box;
     width:auto;
     height:auto;
     margin: 40px;
     padding: 1px;
-   display:flex;
-   grid-template-areas:none ;
+    display:flex;
+    grid-template-areas:none ;
+    
+   
 }
 
 #boxes{
-    height:410px;
+    height:305px;
     width:300px;
     border:1px;
     padding:10px;
@@ -103,25 +122,24 @@ button{
     background-color:white;
 
 }
-#box-commit{
+#item-info{
     position:relative;
-    top:-12px;
-    bottom:10px;
-    background-color:aquamarine;
-   
+    top:-3px;
+    background-color:aquamarine;  
 }
+
 .comment{
-    display:grid;
-    padding:1px;
+    position:relative;
+    display:flex;
+    padding:-10px;
+    margin:7px;
 }
 #image-container{
     width:301px;
-    height:305px;
+    height:220px;
     background-color:blueviolet;
 }
-img{
-    object-fit: cover;
-}
+
 /* End of down section */
 
 
