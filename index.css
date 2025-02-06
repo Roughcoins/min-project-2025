@@ -36,14 +36,17 @@ button{
     margin:2px;
     padding:5px;
     top:30vh;
-    right:-10vw;
-    
 }
 #container-hero{
     position:relative;
     width:auto;
     height:70vh;
     background-color:bisque;
+    
+}
+#hero-container h2,h3{
+    position:relative;
+    margin-left:90px;
 }
 
 #search-items{
@@ -60,9 +63,9 @@ button{
 
 
 #top-metro{
+    display:flex;
     top:1vh;
     position:relative;
-    /* background-color:darkgray; */
     height:35vh;
 }
 
@@ -70,9 +73,7 @@ button{
     position:relative;
     display:flex;
     text-align: center;
-    
-
-    
+    animation: scroll 10s linear infinite;
 }
 
 .slide-items > div {
@@ -86,7 +87,8 @@ button{
 
 .slide-items > div{
  
-    display: grid;
+    display: inline-block;
+    flex-shrink:0;
     padding:10px 0;
     justify-content: center;
     background-color: rgb(50, 50, 50);
@@ -97,16 +99,51 @@ button{
     
 }
 
-#items-veiwer{
+#top-metro > ul{
+    list-style: none;
+    flex-shrink: 0;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap);
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-100%)); } /* Scroll to the left */
+  }
+
+#items-viewer{
     display:flex;
     position:relative;
-    top:1vh;   
+    top:10vh;   
     font-size:20px;
-    gap: 30px;
+    gap: 3px;
     justify-content:center;
     align-items: center;
     justify-items:center;
-    margin:55px;
+    background-color:blueviolet;
+    
+}
+
+#items-viewer > button{
+    position:relative;
+    justify-content: center;
+    align-items:center;
+    left:-6rem;
+
+}
+
+
+#items-viewer > h3{
+    position:relative;
+    top:-10vh;
+    justify-content:center;
+    align-items:center;
+    right:-14rem;
+  
+    
 }
 
 /* End of section */
