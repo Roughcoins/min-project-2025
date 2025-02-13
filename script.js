@@ -4,5 +4,6 @@ const findItems = function(){
     let items
 }
 
-
-const button = document.createElement
+document.querySelector('#hotdeals').addEventListener('click', function(e){
+    const addedItem = 
+})

@@ -17,7 +17,7 @@ nav{
 ul > li{
     list-style-type:none;
     position:absolute;
-    right:50px;
+    
 }
 
 button{
@@ -25,10 +25,44 @@ button{
     margin:10px;
 }
 
+#cart{
+    position:relative;
+    left:35cm;
+    top:1rem;
+    width:1px;
+    height:1px;
+    padding:0;
+    margin:0;
+    
+}
+
 #search-bar{
     position:absolute;
-    left:39rem;
-    top:20px;
+    left:25rem;
+    top:15px;   
+    margin:0;
+    padding:0;
+    border-style:none;
+    
+}
+
+#menu{
+    position:relative;
+    left:1px;
+    float:right;
+    padding: 5px;
+    margin:6px;
+    width:10px;
+
+}
+
+
+
+#menu-select{
+    font-size:16px;
+    font-family:sans-serif;
+    
+    /* width:10px; */
 }
 
 #hero-container{
@@ -50,30 +84,34 @@ button{
 }
 
 #search-items{
-    padding:7px;
-    text-align:left;
+    padding: 1px 2px 1px 4px;
+    float: left;
+    background-position: 7px 7px; 
+    background-repeat: no-repeat;
     align-items: center;
     justify-content: center;
     font-size:20px;
-    height: 35px;
-    width: 14cm;
-    border-radius: 20px 20px;
-    
+    height: 55px;
+    width: 50vw;
+    background-color:url(Pictures/);
+    border-style:none;
 }
 
 
 #top-metro{
     display:flex;
-    top:1vh;
+    top:9vh;
     position:relative;
     height:35vh;
+    width:1783px;
+    overflow:hidden;
 }
 
 .slide-items{
     position:relative;
     display:flex;
     text-align: center;
-    animation: scroll 10s linear infinite;
+    animation: scroll 50s linear infinite;
 }
 
 .slide-items > div {
@@ -82,7 +120,7 @@ button{
     grid-column: 1/auto;
     grid-column:-1;
     grid-template-columns: auto auto auto auto;
-
+    
 }
 
 .slide-items > div{
@@ -96,7 +134,7 @@ button{
     height:30vh;
     font-size: 110px;
     align-content: center;
-    
+   
 }
 
 #top-metro > ul{
@@ -112,7 +150,7 @@ button{
 @keyframes scroll {
     0% { transform: translateX(0); }
     100% { transform: translateX(calc(-100%)); } /* Scroll to the left */
-  }
+}
 
 #items-viewer{
     display:flex;
